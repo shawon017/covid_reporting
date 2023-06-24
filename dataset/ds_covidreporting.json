@@ -1,0 +1,32 @@
+{
+	"name": "ds_covidreporting",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_ablob_sacovidreporting19",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"ds_file_name": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().ds_file_name",
+					"type": "Expression"
+				},
+				"container": "population"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

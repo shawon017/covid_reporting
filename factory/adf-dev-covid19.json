@@ -1,0 +1,9 @@
+{
+	"name": "adf-dev-covid19",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "296921a3-93e1-46f6-b2b8-2bf6583029a1",
+		"tenantId": "33a49dcc-4e87-489e-80e5-8613ca490d29"
+	}
+}
